@@ -1,10 +1,10 @@
-import Sequelize, {Optional, Model} from 'sequelize'
-import {Link} from './link'
-import database from '../database'
+import Sequelize, {Optional, Model} from 'sequelize';
+import {Link} from './link';
+import database from '../database';
 
 interface ILinkCreationAttributes extends Optional<Link, "id">{}
 
-export interface ILinkModel extends Model<Link, ILinkCreationAttributes>, Link{}
+export interface ILinkModel extends Model<Link, ILinkCreationAttributes>, Link {}
 
 const linkModel = database.define<ILinkModel>('link', {
     id: {
@@ -15,7 +15,7 @@ const linkModel = database.define<ILinkModel>('link', {
     },
     url: {
         type: Sequelize.STRING(255),
-        allowNull: false
+        allowNull: false       
     },
     code: {
         type: Sequelize.STRING(20),
@@ -30,3 +30,4 @@ const linkModel = database.define<ILinkModel>('link', {
 })
 
 export default linkModel;
+

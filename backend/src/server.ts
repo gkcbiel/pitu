@@ -1,8 +1,9 @@
-import app from './app'
-import database from './database'
+import app from './app';
+import database from './database';
 
+database.sync();
+console.log('Database running at 3307');
 
-console.log('Database runing at 3306')
+app.listen(3001);
+console.log('Server running at 3001');
 
-app.listen(3001)
-console.log('Server running at 3001')

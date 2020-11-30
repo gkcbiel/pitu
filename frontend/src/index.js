@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './App.scss';
 
-// font awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faExclamationTriangle} from '@fortawesome/free-solid-svg-icons'
+import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faExclamationTriangle);
 
@@ -15,5 +14,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-

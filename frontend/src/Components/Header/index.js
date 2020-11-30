@@ -1,16 +1,19 @@
 import React from 'react';
-import {Logo, HeaderContainer} from './styles.js' ; 
+import { Logo, HeaderContainer } from './styles';
+import Icone from '../../assets/icone.png';
 
-import Icone from '../../assets/icone.png'
 
-function Header(props) { // eslint-disable-next-line 
-    return(
+
+function Header(props) {
+    return (
         <>
             <HeaderContainer>
                 <Logo src={Icone} alt='Pitu - Encurtador de URL' />
-                <h1>Pitu</h1>
+                <h2>Pitu</h2>
                 <p>{props.children}</p>
+
             </HeaderContainer>
+            
         </>
     )
 }
